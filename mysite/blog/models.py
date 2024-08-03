@@ -15,6 +15,22 @@ class Post (models.Model):
 
         def __str__(self):
             return self.title
+        
+
+        
+class Voetbalspelers (models.Model):
+    naam = models.CharField(max_length=50)
+    actuele_voetbalclub = models.CharField(max_length=50)
+    auteur = models.CharField(max_length=50)
+    datum_invoer = models.DateTimeField(default=timezone.now)
+    datum_laatste_aanpassing = models.DateTimeField(blank=True, null=True)
+    
+    def publish(self):
+        self.datum_laatste_aanpassing = timezone.now()
+        self.save()
+
+        def __str__(self):
+          return self.naam
 
 
         
