@@ -1,7 +1,7 @@
 from django.contrib import admin
 from .models import Post
-from .models import Voetbalspelers
+from .models import Voetbalspeler
 
 
 admin.site.register(Post)
-admin.site.register(Voetbalspelers)
+admin.site.register(Voetbalspeler)

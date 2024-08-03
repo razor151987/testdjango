@@ -18,7 +18,7 @@ class Post (models.Model):
         
 
         
-class Voetbalspelers (models.Model):
+class Voetbalspeler (models.Model):
     naam = models.CharField(max_length=50)
     actuele_voetbalclub = models.CharField(max_length=50)
     auteur = models.CharField(max_length=50)
@@ -29,8 +29,5 @@ class Voetbalspelers (models.Model):
         self.datum_laatste_aanpassing = timezone.now()
         self.save()
 
-        def __str__(self):
-          return self.naam
-
-
-        
+    def __str__(self):
+        return self.naam
