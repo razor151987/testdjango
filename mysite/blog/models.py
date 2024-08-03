@@ -27,8 +27,8 @@ class Voetbalspelers(models.Model):
         self.datum_laatste_aanpassing = timezone.now()
         self.save()
 
-    def __str__(self):
-        return self.naam
+        def __str__(self):
+            return self.naam
 
 
         
