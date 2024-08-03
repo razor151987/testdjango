@@ -19,7 +19,7 @@ class Post (models.Model):
 
         
 class Voetbalspeler (models.Model):
-    auteur = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     naam = models.CharField(max_length=50)
     actuele_voetbalclub = models.CharField(max_length=50)
     datum_invoer = models.DateTimeField(default=timezone.now)
