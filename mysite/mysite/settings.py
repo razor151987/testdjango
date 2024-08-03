@@ -120,15 +120,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
-<<<<<<< HEAD
+
 
 STATIC_ROOT = "/home/razor151987/razor151987.eu.pythonanywhere.com/static"
 
-
 STATIC_URL = '/static/'
-=======
-STATIC_URL = '/home/razor151987/razor151987.eu.pythonanywhere.com/static/'
->>>>>>> ef18c8c8538c9a6ba30d44a58c7e528a95031976
+
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
