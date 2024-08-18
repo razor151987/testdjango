@@ -31,7 +31,7 @@ def delete_post(request, post_id=None):
     post_to_delete=Post.objects.get (id=post_id)
     post_to_delete.delete()
     return render(request, 'blog/post_list.html')
-=======
+
 from .models import Post
 
 def post_list(request):
