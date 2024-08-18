@@ -4,27 +4,41 @@ body{
     margin: 0!important;
 }
 
+<<<<<<< HEAD
 #container{
 min-height: 90%;
 }
 
+=======
+>>>>>>> f0f7ef6935b7a7014fb330d5aa967e5fc2fdf735
 h1{
     color:rgb(0, 0, 0);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 article{
+<<<<<<< HEAD
     width:500px;
+=======
+    width:600px;
+>>>>>>> f0f7ef6935b7a7014fb330d5aa967e5fc2fdf735
     margin-bottom:30px;
     margin-top:20px;
     border: 3px solid rgb(255, 255, 255);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: lightpink;
+<<<<<<< HEAD
 
 }
 
 a{
     color:black;
+=======
+}
+
+a{
+    color:rgb(233, 151, 0)
+>>>>>>> f0f7ef6935b7a7014fb330d5aa967e5fc2fdf735
 }
 
 .post{
@@ -43,6 +57,7 @@ a{
 }
 
 .blok{ 
+<<<<<<< HEAD
     width:505px;
      margin-left:40%;
     background-color: lightpink;
@@ -59,4 +74,18 @@ a{
 
 .top_menu{
     margin-left: 50px;
+=======
+    width:605px;
+    height:auto;
+    margin-left:40%;
+    background-color: lightpink;
+}
+
+#footer{
+    margin: 0;
+    padding: 0;
+    min-height:100px;
+    background-color: orange;
+    width:100%;
+>>>>>>> f0f7ef6935b7a7014fb330d5aa967e5fc2fdf735
 }

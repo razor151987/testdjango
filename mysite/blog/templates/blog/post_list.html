@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 {% extends 'blog/base.html' %}
 
+=======
+>>>>>>> f0f7ef6935b7a7014fb330d5aa967e5fc2fdf735
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -26,13 +29,21 @@ crossorigin="anonymous">
       
 <!--Het artikelen blok de juiste kleur geven en naar rechts verplaatsen.-->
 <div class="blok">
+<<<<<<< HEAD
  {% block inhoud %}
+=======
+ {% block content %}
+>>>>>>> f0f7ef6935b7a7014fb330d5aa967e5fc2fdf735
  {% for post in posts %}
  <article class="post">
 <time class="date">
 {{ post.published_date}}
 </time>
+<<<<<<< HEAD
 <h2><a href="{% url 'post_inhoud' pk=post.pk %}">{{post.title }}</a></h2>
+=======
+<h2><a href="">{{post.title }}</a></h2>
+>>>>>>> f0f7ef6935b7a7014fb330d5aa967e5fc2fdf735
 <p>{{ post.text|linebreaksbr }}</p>
 </article>
 {% endfor %}

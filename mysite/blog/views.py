@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.utils import timezone
+<<<<<<< HEAD
 from django.shortcuts import render, get_object_or_404
 from django.shortcuts import redirect
 from .models import Post
@@ -31,3 +32,10 @@ def delete_post(request, post_id=None):
     post_to_delete=Post.objects.get (id=post_id)
     post_to_delete.delete()
     return render(request, 'blog/post_list.html')
+=======
+from .models import Post
+
+def post_list(request):
+    posts = Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+    return render(request, 'blog/post_list.html', {'posts': posts})
+>>>>>>> f0f7ef6935b7a7014fb330d5aa967e5fc2fdf735
